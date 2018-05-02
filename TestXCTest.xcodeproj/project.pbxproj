@@ -368,7 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rangam.rangamtalentnetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "41de531a-2a38-4603-9a83-8823cd67cece";
+				PROVISIONING_PROFILE = "4da9420c-d7b4-4dfc-a7e8-d714605afd65";
 				PROVISIONING_PROFILE_SPECIFIER = "Rangam Talent Network";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +401,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BEV2Z98CJ8;
 				INFOPLIST_FILE = TestXCTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,6 +412,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.TestXCTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0d42fcfb-e056-42ff-821d-3b820d6232e0";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestXCTest;
@@ -420,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BEV2Z98CJ8;
 				INFOPLIST_FILE = TestXCTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +435,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.TestXCTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d9ff6501-ec3d-4752-bf18-3513f4a5cad7";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestXCTest;
