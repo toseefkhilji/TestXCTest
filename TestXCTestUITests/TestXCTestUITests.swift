@@ -28,9 +28,70 @@ class TestXCTestUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func waiterResultWithExpextation(_ element: XCUIElement) -> XCTWaiter.Result {
+        let myPredicate = NSPredicate(format: "exists == true")
+        let myExpectation = expectation(for: myPredicate, evaluatedWith: element,
+                                        handler: nil)
+        
+        let result = XCTWaiter().wait(for: [myExpectation], timeout: 5)
+        return result
     }
     
+    func testExample() {
+        // Use recording to get started writing UI tests.
+        
+        
+        let app = XCUIApplication()
+       let button =  app.buttons["Button"]
+        button.tap()
+        
+//        XCTAssertTrue(waiterResultWithExpextation(button) == .completed)
+
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+//        XCTAssertTrue(waiterResultWithExpextation(nextButton) == .completed)
+
+        let secondButton = app.navigationBars["Third"].buttons["Second"]
+        secondButton.tap()
+        nextButton.tap()
+        secondButton.tap()
+        app.navigationBars["Second"].buttons["Home"].tap()
+//        let app = XCUIApplication()
+//        app.buttons["Button"].tap()
+//        app.buttons["Next"].tap()
+//        XCUIApplication().navigationBars.buttons.element(boundBy: 0).tap()
+//
+//        let homeButton = app.navigationBars["Second"].buttons["Home"]
+//        homeButton.tap()
+//        }
+    }
+    
+    func testExample1() {
+        // Use recording to get started writing UI tests.
+        
+        
+        let app = XCUIApplication()
+        let button =  app.buttons["Button"]
+        button.tap()
+        
+        //        XCTAssertTrue(waiterResultWithExpextation(button) == .completed)
+        
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        //        XCTAssertTrue(waiterResultWithExpextation(nextButton) == .completed)
+        
+        let secondButton = app.navigationBars["Third"].buttons["Second"]
+        secondButton.tap()
+        nextButton.tap()
+        secondButton.tap()
+        app.navigationBars["Second"].buttons["Home"].tap()
+        //        let app = XCUIApplication()
+        //        app.buttons["Button"].tap()
+        //        app.buttons["Next"].tap()
+        //        XCUIApplication().navigationBars.buttons.element(boundBy: 0).tap()
+        //
+        //        let homeButton = app.navigationBars["Second"].buttons["Home"]
+        //        homeButton.tap()
+        //        }
+    }
 }
