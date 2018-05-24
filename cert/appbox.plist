@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Certificates.p12</string>
+		<key>password</key>
+		<string>rangam@123</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>a209266f-1cde-4062-a864-b2c72e4f6d9b.mobileprovision</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>d98a8135-a127-4d8b-a683-15f54095b69a.mobileprovision</string>
+	</dict>
+</array>
+</plist>

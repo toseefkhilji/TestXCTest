@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>project</key>
+	<string>TestXCTest.xcodeproj</string>
+	<key>scheme</key>
+	<string>TestXCTest</string>
+	<key>buildtype</key>
+	<string>development</string>
+	<key>teamid</key>
+	<string>BEV2Z98CJ8</string>
+	<key>keepsamelink</key>
+	<false/>
+	<key>dropboxfoldername</key>
+	<string></string>
+	<key>email</key>
+	<string>toseefhusen@rangam.com</string>
+	<key>personalmessage</key>
+	<string>Test Build</string>
+</dict>
+</plist>
